@@ -9,7 +9,6 @@
             <li><router-link to="/admin/category">Danh Mục</router-link></li>
             <li><router-link to="/admin/orders">Đơn hàng</router-link></li>
             <li><router-link to="/admin/customers">Khách hàng</router-link></li>
-            
           </ul>
         </nav>
       </aside>
