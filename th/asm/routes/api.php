@@ -8,6 +8,7 @@ use App\Http\Controllers\Api\CategoryController;
 use App\Http\Controllers\Api\ProductImageController;
 use App\Http\Controllers\Api\OrderController;
 use App\Http\Controllers\Api\UserController;
+use App\Http\Controllers\Api\DanhMucTtController;
 Route::delete('/products/{product_id}/images/{image_id}', [ProductImageController::class, 'destroy']);
 
 Route::post('/products/{product_id}/images', [ProductImageController::class, 'store']);
@@ -46,4 +47,5 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::get('/users', [UserController::class, 'index']);
 Route::delete('/users/{id}', [UserController::class, 'destroy']);
+Route::get('/danh-muc-tin-tuc', [DanhMucTtController::class, 'show']);
 
